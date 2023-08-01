@@ -1,0 +1,19 @@
+
+
+/*========== Navigation Bar ================ */
+ .header-area .navbar .navbar-brand{
+    padding: 0 2rem 0rem 5rem;
+    font: normal bolder;
+
+    
+ }
+
+ .header-area .navbar .LRside{
+    padding: 0 3rem;
+ }
+
+ .header-area .navbar .LRside > .register{
+    background-color: orange;
+ }
+
+/*========== End Navigation Bar ===========  */
