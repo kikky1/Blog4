@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
+    <title>article page</title>
 
 <!------Bootstrap css file-->
 <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="./css/all.min.css">
 
 <!---css file-->
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/artstyle.css">
 </head>
 <body>
 <!------Navigation Bar--------->
@@ -36,7 +36,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Link</a></li>
               <li><a class="dropdown-item" href="#">Another Link</a></li>
-             
+              
               <li><a class="dropdown-item" href="#">A third Link</a></li>
             </ul>
           </li>
@@ -47,12 +47,19 @@
         </ul>
 
         <ul class="navbar-nav LRside">
-          <li class="nav-item">
-            <a class="nav-link" href="">Login</a>
-          </li>
-          <li class="nav-item register">
-            <a class="nav-link" href="">Register</a>
-          </li>
+           
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Welcome <span class="text-mute">Kiktech</span> 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Create Post</a></li>
+                  <li><a class="dropdown-item" href="#">My Posts</a></li>
+                  
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+             
         </ul>
         
       </div>
@@ -74,22 +81,26 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6 col-md-12">
-      <div class="account-area">
-      <h4 class="mb-4">Login Here</h4>
-      <form action="">
-   
-        <div class="form-area mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" placeholder="Your Email">
+        <div class="article-area">
+            <h4 class="mb-3">New Article</h4>
+            <p class="article-title">
+                <label for="article">Article Title</label>
+            </p>
         </div>
-        <div class="form-area mb-3">
-          <label for="pwd" class="form-label">Password</label>
-          <input type="pwd" class="form-control" placeholder="Enter Your password">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control">
         </div>
-     
-        <button type="button" class="btn btn-primary mb-3 px-3">Register</button>
-      </form>
-    </div>
+        <form action="">
+    
+            <div class="form-area mb-3">
+            <label for="email" class="form-label">Article</label>
+            <input type="email" class="form-control form-style" placeholder="Write your article">
+            </div>
+           
+            
+        </form>
+        <button type="button" class="btn button-color mb-3 px-3">Post Article</button>
+    
     </div>
     
     <div class="col-lg-6 col-md-12">
