@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>article page</title>
+    <title>article2 page</title>
 
 <!------Bootstrap css file-->
 <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -12,21 +12,7 @@
 <link rel="stylesheet" href="./css/all.min.css">
 
 <!---css file-->
-<link rel="stylesheet" href="./css/artstyle.css">
-
-
-<script src="https://cdn.tiny.cloud/1/1xxnktgrouql7tjltsuirbswpw2ciujyjv86oy4rnxwhbl6r/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-
-<script>
-  tinymce.init({
-    selector: 'textarea#editor',
-    skin: 'bootstrap',
-    plugins: 'lists, link, image, media',
-    toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help',
-    menubar: false,
-  });
-</script>
-
+<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <!------Navigation Bar--------->
@@ -50,7 +36,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Link</a></li>
               <li><a class="dropdown-item" href="#">Another Link</a></li>
-              
+             
               <li><a class="dropdown-item" href="#">A third Link</a></li>
             </ul>
           </li>
@@ -61,19 +47,17 @@
         </ul>
 
         <ul class="navbar-nav LRside">
-           
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Welcome <span class="text-mute">Kiktech</span> 
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Create Post</a></li>
-                  <li><a class="dropdown-item" href="#">My Posts</a></li>
-                  
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </li>
-             
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Welcome <span class="text-mute">Kiktech</span> 
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Create Post</a></li>
+              <li><a class="dropdown-item" href="#">My Posts</a></li>
+              
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
         </ul>
         
       </div>
@@ -95,24 +79,29 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6 col-md-12">
-        <div class="article-area">
-            <h4 class="mb-3">New Article</h4>
-            <p class="article-title">
-                <label for="article">Article Title</label>
-            </p>
-        </div>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control">
-        </div>
-        <label for="email" class="form-label">Article</label>
-            <div class="form-group mb-3">
-              <textarea id="editor"></textarea>
-            </div>
-           
-            
-
-        <button type="button" class="btn button-color mb-3 px-3">Post Article</button>
-    
+      <div class="account-area">
+      <h4 class="mb-4">All My Article</h4>
+      <table class="table">
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>Title</th>
+                <th>Comments</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Title Title Title Title</td>
+                <td>5</td>
+                <td>August 3, 2023</td>
+                <td>Edit <span class="bg-danger text-white p-1">Delete</span></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
     </div>
     
     <div class="col-lg-6 col-md-12">
